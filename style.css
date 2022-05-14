@@ -6,14 +6,23 @@ body {
     background-image: radial-gradient(rgb(122, 209, 243), blueviolet);
 }
 
-.info {
+.round {
+    width: 100vw;
+    max-width: 300px;
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+}
+.scores {
     width: 100vw;
     max-width: 300px;
     min-height: 50px;
-    background-color: rgba(0, 0, 0, 0.3);
-    text-align: end;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    color: #fff;
 }
-.info p {
+.scores p {
     margin: 0;
     padding: 8px;
 }

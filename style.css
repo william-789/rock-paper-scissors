@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: radial-gradient(rgb(122, 209, 243), blueviolet);
+}
+
+.info {
+    width: 100vw;
+    max-width: 300px;
+    min-height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: end;
+}
+.info p {
+    margin: 0;
+    padding: 8px;
+}
+
+.choices {
+    width: 100vw;
+    max-width: 300px;
+    height: 100vw;
+    max-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.option {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 100%;
+    border: solid #fff 10px;
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+                inset 0 -10px 15px rgba(255, 255, 255, 0.05),
+                0 15px 15px rgba(0, 0, 0, 0.3),
+                inset 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+#rock {
+    background-color: blue;
+    grid-column: 1/1;
+    grid-row: 3/3;
+}
+#paper {
+    background-color: red;
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+#scissors {
+    background-color: green;
+    grid-column: 3/3;
+    grid-row: 3/3;
+}
